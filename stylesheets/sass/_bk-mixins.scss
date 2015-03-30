@@ -1,0 +1,125 @@
+// Variables
+$circle-color:#92b3c3;
+$inner-title-blue:#91b1c2;
+$h3-blue:#467993;
+$sidebar-blue:#1f4356;
+$sidebar-blue2:#89abbe;
+$cta-orange:#dc8a14;
+$footer-blue:#487892;
+$footer-lt-blue:#a6cade;
+$max-tablet:max-width 767px;
+$tablet2desk:(min-width 768px)(max-width 1220px);
+$font1: 'Fjalla One', sans-serif;
+$font2: 'Raleway', sans-serif;
+
+// Functions
+@function slash() {
+  @return unquote("/")
+}
+
+
+// Mixins
+@mixin raleway($weight, $size, $line-height) {
+  font:$weight $size slash() $line-height $font2;
+}
+
+@mixin fjalla($size, $line-height) {
+  font:400 $size slash() $line-height $font1;
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@mixin color-opacity($color, $opacity: 0.3) {
+    color: $color; /* The Fallback */
+    color: rgba($color, $opacity);
+}
+// ex - @include background-opacity($circle-color, .9);
+
+@mixin border-opacity($size, $style, $color, $opacity) {
+    border: $size $style $color; /* The Fallback */
+    border: $size $style rgba($color, $opacity);
+}
+
+@mixin section-head {
+  margin-top:74px;
+  margin-bottom:74px;
+  @include color-opacity(#444, .9);
+  text-align:center;
+  @include raleway(700, 36px, 16px);
+  text-transform:uppercase;
+  @include breakpoint(max-width 767px) {
+    font-size:1.6em;
+    margin-top:1.6em;
+    margin-bottom:1.6em;
+  }
+}
+
+@mixin cccs-mobile-menu {
+  @extend .col-xs-12;
+  @extend .hidden-md;
+  @extend .hidden-lg;
+  margin-top:1em;
+  margin-bottom:1em;
+    select {
+      width:100%;
+      padding:.5em 0;
+    }
+}
+
+@mixin cccs-orange-btn {
+  background-color:transparent;
+  text-transform:uppercase;
+  padding:.75em 1em;
+  border-radius:0;
+  @include border-opacity(3px, solid, $cta-orange, .9);
+  @include color-opacity(#fff, .9);
+  @include fjalla(24px, 16px);
+  @include breakpoint(max-width 767px) {
+    @include fjalla(21px, 16px);
+  }
+
+  &:hover {
+    @include background-opacity(darken($cta-orange, .9));
+  }
+}
+
+
+@mixin cccs-breadcrumbs {
+
+    @extend .col-lg-offset-1;
+    padding-left:0;
+    @include raleway(400, 18px, 16px);
+    @include color-opacity(#fff,.9);
+    text-transform:uppercase;
+    @include breakpoint(320px) {
+      padding-left:1em;
+      padding-right: 1em;
+    }
+    a {
+    @include color-opacity(#fff,.9);
+    @include text-shadow(0 1px 0 rgba(0,0,0,.5));
+      text-transform:uppercase;
+    }
+    li {
+      list-style:none;
+      line-height:2em;
+      @include breakpoint(320px) {
+        line-height:1em;
+      }
+      &.bc-1 {
+        text-transform:uppercase;
+        display:inline-block;
+      }
+        .breadcrumb_last  {
+          display:block;
+          @include raleway(700, 1.5em, .5em);
+          @include text-shadow(0 1px 0 rgba(0,0,0,.5));
+          @include breakpoint(320px) {
+            @include raleway(700, 1.25em, 1em);
+          }
+        }
+    }
+}

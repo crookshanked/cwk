@@ -1,0 +1,72 @@
+/*
+Syntax error: File to import not found or unreadable: default-style.
+              Load paths:
+                /cygdrive/c/xampp/htdocs/cwk/wp-content/themes/cwk/stylesheets/sass
+                /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.0.alpha.19/stylesheets
+                /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets
+                /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets
+                /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sassy-maps-0.3.2/stylesheets
+                /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/breakpoint-2.5.0/stylesheets
+                Compass::SpriteImporter
+                /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets
+        on line 21 of /cygdrive/c/xampp/htdocs/cwk/wp-content/themes/cwk/stylesheets/sass/styles.scss
+
+Backtrace:
+/cygdrive/c/xampp/htdocs/cwk/wp-content/themes/cwk/stylesheets/sass/styles.scss:21
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/import_node.rb:45:in `import'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/stack.rb:79:in `block in with_base'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/stack.rb:121:in `with_frame'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/stack.rb:79:in `with_base'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/tree/root_node.rb:20:in `render'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.3.7/lib/sass/engine.rb:274:in `render'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:17:in `block in render'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:16:in `render'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:166:in `block in compile'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/logger.rb:46:in `red'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:165:in `compile'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:144:in `compile_if_required'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:129:in `block (2 levels) in run'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `each'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:127:in `block in run'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:153:in `timed'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/compiler.rb:126:in `run'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/commands/update_project.rb:49:in `perform'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/commands/stamp_pattern.rb:76:in `perform'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/commands/base.rb:18:in `execute'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/commands/project_base.rb:19:in `execute'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/bin/compass:30:in `block in <top (required)>'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/bin/compass:44:in `call'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-1.0.0.alpha.19/bin/compass:44:in `<top (required)>'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/bin/compass:23:in `load'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/bin/compass:23:in `<main>'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `eval'
+/home/Meeker/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: default-style.\A               Load paths:\A                 /cygdrive/c/xampp/htdocs/cwk/wp-content/themes/cwk/stylesheets/sass\A                 /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.0.alpha.19/stylesheets\A                 /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets\A                 /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sassy-buttons-0.2.6/stylesheets\A                 /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/sassy-maps-0.3.2/stylesheets\A                 /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/breakpoint-2.5.0/stylesheets\A                 Compass::SpriteImporter\A                 /home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets\A         on line 21 of /cygdrive/c/xampp/htdocs/cwk/wp-content/themes/cwk/stylesheets/sass/styles.scss"; }
