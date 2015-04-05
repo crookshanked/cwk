@@ -1,0 +1,144 @@
+// Body Stuff
+
+body {
+	background-color:rgb(90,0,0);
+	background-color:rgba(90,0,0,.9);
+	background-image:url('../img/checker-orange.png');
+	.wrapper {
+		@include background-opacity(#eee, .9);
+		@include breakpoint(768px) {
+			border-right:1px solid #a1a1a1;
+			border-left:1px solid #a1a1a1;
+			border-right:1px solid rgba(0,0,0,.25);
+			border-left:1px solid rgba(0,0,0,.25);
+		}
+		.header {
+			@extend .row;
+			@include background-opacity(rgb(90,0,0), .9);
+			padding-top:1em;
+			padding-bottom:1em;
+				.logo {
+					@extend .col-xs-12;
+					@extend .col-sm-6;
+					@extend .col-md-4;
+					@extend .col-lg-3;
+					text-align:center;
+						a {
+							@include color-opacity(#fff, .9);
+							@include breakpoint(320px) {
+								font-size:2em;
+								text-transform:uppercase;
+								line-height:1.5em;
+							}
+							&:hover {
+								text-decoration:none;
+							}
+								.with,
+								.kyle {
+									font-size:4rem;
+								
+								}
+								.cooking {
+									display:block;
+									font-size:6rem;
+								}
+								.with {
+									display:inline-block;
+								}
+								.kyle {
+									display:inline-block;
+								}
+								img {
+								
+								}
+						}
+				//end .logo
+				}
+
+				.nav {
+					@extend .col-xs-12;
+					@extend .col-sm-12;
+					@extend .col-md-offset-1;
+					@extend .col-md-7;
+					@extend .col-lg-offset-1;
+					@extend .col-lg-8;
+						ul {
+						padding-left:0;
+							li {
+								display:inline-block;
+								&#menu-item-17 {
+									display:none;
+								}
+								
+									a {
+										@include color-opacity(#fff,.9);
+										font-size:1.5em;
+										font-weight:700;
+										text-transform:uppercase;
+									//end a
+								}
+							//end li
+							}
+						//end ul
+						}
+
+				//end .nav
+				}
+		}
+		//end header
+
+		.main {
+			@extend .row;
+				.main-section {
+					@extend .col-xs-12;
+					@extend .col-sm-9;
+					@extend .col-md-9;
+					@extend .col-lg-9;
+					h1 {
+						
+					//h1
+					}
+					.home-article {
+						.page-content {
+							
+						}
+					//article
+					}
+				}
+				//.msec
+			.sidebar {
+				@extend .col-xs-12;
+				@extend .col-sm-3;
+				@extend .col-md-3;
+				@extend .col-lg-3;
+				@include background-opacity(rgb(45,90,0),.25);
+				padding-bottom:1em;
+				
+					.sidebar-widget {
+					
+					}
+					//.sidebar-widget
+			}
+			//.sidebar
+		}
+		//.main
+		
+		
+		.footer {
+			@extend .row;
+			@include background-opacity(#ccc, .9);
+			padding-top:1em;
+			padding-bottom:1em;
+				.copyright {
+					@extend .col-xs-12;
+					@extend .col-sm-6;
+					@extend .col-md-4;
+					@extend .col-lg-3;
+				}
+		}
+		//end footer
+	}
+	//end wrapper
+//end body	
+}
+

@@ -30,7 +30,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font:400 16px/16px 'Open Sans', Arial, sans-serif;
 	color:#444;
 }
 /* clear */
@@ -75,10 +75,11 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
-	margin:0 auto;
-	position:relative;
+	// max-width:1280px;
+	// width:95%;
+	// margin:0 auto;
+	// position:relative;
+	@extend .container;
 }
 /* header */
 .header {

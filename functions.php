@@ -62,6 +62,31 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
+// Header Navigation 
+function cwk_header_nav()
+{
+	wp_nav_menu(
+	array(
+		'theme_location'  => 'header-menu',
+		// 'menu'            => '',
+		'container'       => 'nav',
+		'container_class' => 'container',
+		// 	'container_id'    => '',
+		'menu_class'      => 'menu nav navbar-nav',
+		'menu_id'         => ''
+		// 'echo'            => true,
+		// 'fallback_cb'     => 'wp_page_menu',
+		// 'before'          => '',
+		// 'after'           => '',
+		// 'link_before'     => '',
+		// 'link_after'      => '',
+		// 'items_wrap'      => '<ul>%3$s</ul>',
+		// 'depth'           => 0,
+		// 'walker'          => ''
+		)
+	);
+}
+
 // HTML5 Blank navigation
 function html5blank_nav()
 {
@@ -97,6 +122,13 @@ function html5blank_header_scripts()
 
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
+		
+        // wp_register_script('jquery', 'http://code.jquery.com/jquery-2.1.3.min.js', array(), '2.1.3'); // jQuery
+        wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', array(), '2.1.3'); // jQuery
+        wp_enqueue_script('jquery'); // Enqueue it!
+
+        wp_register_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.2'); // BootstrapJS
+        wp_enqueue_script('bootstrapjs'); // Enqueue it!
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
@@ -115,8 +147,8 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('html5blank', get_template_directory_uri() . '/stylesheets/styles.css', array(), '1.0', 'all');
-    wp_enqueue_style('html5blank'); // Enqueue it!
+    wp_register_style('cwk', get_template_directory_uri() . '/stylesheets/styles.css', array(), '1.0', 'all');
+    wp_enqueue_style('cwk'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

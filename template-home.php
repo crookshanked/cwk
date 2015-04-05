@@ -1,41 +1,43 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 
 	<main class="main" role="main">
-		<!-- section -->
-		<section class="main-section">
+			<!-- section -->
+			<section class="main-section">
 
-			<h1 class="page-title"><?php the_title(); ?></h1>
+				<h1 class="page-title"><?php the_title(); ?></h1>
 
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				
-				<div class="page-content">
-					<?php the_content(); ?>
-				</div>
-		
-			</article>
-			<!-- /article -->
+				<!-- article -->
+				<article id="post-<?php the_ID(); ?>" <?php post_class('home-article'); ?>>
+					
+					<div class="page-content">
+						<?php the_content(); ?>
+					</div>
+			
+				</article>
+				<!-- /article -->
 
-		<?php endwhile; ?>
+			<?php endwhile; ?>
 
-		<?php else: ?>
+			<?php else: ?>
 
-			<!-- article -->
-			<article>
+				<!-- article -->
+				<article>
 
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+					<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 
-			</article>
-			<!-- /article -->
+				</article>
+				<!-- /article -->
 
-		<?php endif; ?>
+			<?php endif; ?>
 
-		</section>
-		<!-- /section -->
+			</section>
+			<!-- /section -->
+		<!-- aside -->
+		<?php get_sidebar(); ?>
+		<!-- /aside -->
 	</main>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
