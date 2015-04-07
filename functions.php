@@ -9,6 +9,7 @@
 	External Modules/Files
 \*------------------------------------*/
 
+require_once('wp_bootstrap_navwalker.php');
 // Load any external files you have here
 
 /*------------------------------------*\
@@ -68,24 +69,27 @@ function cwk_header_nav()
 	wp_nav_menu(
 	array(
 		'theme_location'  => 'header-menu',
-		// 'menu'            => '',
+		// 'menu'            => 'primary',
 		'container'       => 'nav',
-		'container_class' => 'container',
-		// 	'container_id'    => '',
+		'container_class' => 'collapse navbar-collapse',
+		'container_id'    => 'bs-navbar-collapse',
 		'menu_class'      => 'menu nav navbar-nav',
-		'menu_id'         => ''
+		'menu_id'         => '',
 		// 'echo'            => true,
-		// 'fallback_cb'     => 'wp_page_menu',
+		'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 		// 'before'          => '',
 		// 'after'           => '',
 		// 'link_before'     => '',
 		// 'link_after'      => '',
 		// 'items_wrap'      => '<ul>%3$s</ul>',
-		// 'depth'           => 0,
-		// 'walker'          => ''
-		)
+		'depth'           => 2,
+		'walker'          => new wp_bootstrap_navwalker())		
 	);
 }
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'cwk' ),
+) );
 
 // HTML5 Blank navigation
 function html5blank_nav()
