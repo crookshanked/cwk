@@ -4,6 +4,7 @@ body {
 	background-color:rgb(90,0,0);
 	background-color:rgba(90,0,0,.9);
 	background-image:url('../img/checker-orange.png');
+	// padding-top:50px;
 	.wrapper {
 		@include background-opacity(#eee, .9);
 		@include breakpoint(768px) {
@@ -55,16 +56,29 @@ body {
 				//end .logo
 				}
 
-				.nav {
+				.main-nav {
 					@extend .col-xs-12;
 					@extend .col-sm-12;
 					@extend .col-md-offset-1;
 					@extend .col-md-7;
 					@extend .col-lg-offset-1;
 					@extend .col-lg-8;
-					margin-top:1.7em;
+					@extend .navbar;
+					@extend .navbar-static-top;
+					margin-top: 52px;
+					margin-bottom: 0;
+					&.nav .open > a, &.nav .open > a:hover, &.nav .open > a:focus {
+						background-color:transparent;
+					}
+					.dropdown-menu {
+						// background-color:transparent;
+						@include background-opacity(rgb(90,0,0), .9);
+
+					}
+					// margin-top:1.7em;
 						ul {
 						padding-left:0;
+						float:right;
 							li {
 								display:inline-block;
 

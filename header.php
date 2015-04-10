@@ -44,8 +44,7 @@
 					<!-- /logo -->
 
 					<!-- nav -->
-					<nav class="nav nav-bar" role="navigation">
-						
+					<nav class="main-nav nav">
 						<?php cwk_header_nav(); ?>
 					</nav>
 					<!-- /nav -->

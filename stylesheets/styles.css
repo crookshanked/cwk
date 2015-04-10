@@ -336,7 +336,7 @@ th {
   }
 
   /* line 78, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_print.scss */
-  .navbar {
+  .navbar, body .wrapper .header .main-nav {
     display: none;
   }
 
@@ -2406,7 +2406,7 @@ pre code {
 }
 
 /* line 11, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, body .wrapper .main .sidebar, .col-md-3, body .wrapper .main .sidebar, .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-xs-4, .col-sm-4, .col-md-4, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, body .wrapper .header .nav, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, body .wrapper .header .nav, .col-xs-9, .col-sm-9, body .wrapper .main .main-section, .col-md-9, body .wrapper .main .main-section, .col-lg-9, body .wrapper .main .main-section, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body .wrapper .header .logo, body .wrapper .header .nav, body .wrapper .main .main-section, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-sm-12, body .wrapper .header .nav, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, body .wrapper .main .sidebar, .col-md-3, body .wrapper .main .sidebar, .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-xs-4, .col-sm-4, .col-md-4, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, body .wrapper .header .main-nav, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, body .wrapper .header .main-nav, .col-xs-9, .col-sm-9, body .wrapper .main .main-section, .col-md-9, body .wrapper .main .main-section, .col-lg-9, body .wrapper .main .main-section, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body .wrapper .header .logo, body .wrapper .header .main-nav, body .wrapper .main .main-section, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-sm-12, body .wrapper .header .main-nav, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2414,7 +2414,7 @@ pre code {
 }
 
 /* line 27, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, body .wrapper .header .logo, body .wrapper .header .nav, body .wrapper .main .main-section, body .wrapper .main .sidebar, body .wrapper .footer .copyright {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, body .wrapper .header .logo, body .wrapper .header .main-nav, body .wrapper .main .main-section, body .wrapper .main .sidebar, body .wrapper .footer .copyright {
   float: left;
 }
 
@@ -2474,7 +2474,7 @@ pre code {
 }
 
 /* line 35, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-12, body .wrapper .header .logo, body .wrapper .header .nav, body .wrapper .main .main-section, body .wrapper .main .sidebar, body .wrapper .footer .copyright {
+.col-xs-12, body .wrapper .header .logo, body .wrapper .header .main-nav, body .wrapper .main .main-section, body .wrapper .main .sidebar, body .wrapper .footer .copyright {
   width: 100%;
 }
 
@@ -2675,7 +2675,7 @@ pre code {
 
 @media (min-width: 768px) {
   /* line 27, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-1, .col-sm-2, .col-sm-3, body .wrapper .main .sidebar, .col-sm-4, .col-sm-5, .col-sm-6, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-sm-7, .col-sm-8, .col-sm-9, body .wrapper .main .main-section, .col-sm-10, .col-sm-11, .col-sm-12, body .wrapper .header .nav {
+  .col-sm-1, .col-sm-2, .col-sm-3, body .wrapper .main .sidebar, .col-sm-4, .col-sm-5, .col-sm-6, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-sm-7, .col-sm-8, .col-sm-9, body .wrapper .main .main-section, .col-sm-10, .col-sm-11, .col-sm-12, body .wrapper .header .main-nav {
     float: left;
   }
 
@@ -2735,7 +2735,7 @@ pre code {
   }
 
   /* line 35, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-12, body .wrapper .header .nav {
+  .col-sm-12, body .wrapper .header .main-nav {
     width: 100%;
   }
 
@@ -2936,7 +2936,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 27, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, body .wrapper .main .sidebar, .col-md-4, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-md-5, .col-md-6, .col-md-7, body .wrapper .header .nav, .col-md-8, .col-md-9, body .wrapper .main .main-section, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, body .wrapper .main .sidebar, .col-md-4, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-md-5, .col-md-6, .col-md-7, body .wrapper .header .main-nav, .col-md-8, .col-md-9, body .wrapper .main .main-section, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -2971,7 +2971,7 @@ pre code {
   }
 
   /* line 35, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-7, body .wrapper .header .nav {
+  .col-md-7, body .wrapper .header .main-nav {
     width: 58.33333333%;
   }
 
@@ -3136,7 +3136,7 @@ pre code {
   }
 
   /* line 60, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-offset-1, body .wrapper .header .nav {
+  .col-md-offset-1, body .wrapper .header .main-nav {
     margin-left: 8.33333333%;
   }
 
@@ -3197,7 +3197,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   /* line 27, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-1, .col-lg-2, .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, body .wrapper .header .nav, .col-lg-9, body .wrapper .main .main-section, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, body .wrapper .header .main-nav, .col-lg-9, body .wrapper .main .main-section, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
 
@@ -3237,7 +3237,7 @@ pre code {
   }
 
   /* line 35, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-8, body .wrapper .header .nav {
+  .col-lg-8, body .wrapper .header .main-nav {
     width: 66.66666667%;
   }
 
@@ -3397,7 +3397,7 @@ pre code {
   }
 
   /* line 60, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-offset-1, body .wrapper .header .nav {
+  .col-lg-offset-1, body .wrapper .header .main-nav {
     margin-left: 8.33333333%;
   }
 
@@ -5470,24 +5470,24 @@ tbody.collapse.in {
 }
 
 /* line 11, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar {
+.navbar, body .wrapper .header .main-nav {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
 /* line 14, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.navbar:before, .navbar:after {
+.navbar:before, body .wrapper .header .main-nav:before, .navbar:after, body .wrapper .header .main-nav:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.navbar:after {
+.navbar:after, body .wrapper .header .main-nav:after {
   clear: both;
 }
 @media (min-width: 768px) {
   /* line 11, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar {
+  .navbar, body .wrapper .header .main-nav {
     border-radius: 4px;
   }
 }
@@ -5549,7 +5549,7 @@ tbody.collapse.in {
     overflow-y: visible;
   }
   /* line 81, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, body .wrapper .header .main-nav .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     padding-left: 0;
     padding-right: 0;
   }
@@ -5590,13 +5590,13 @@ tbody.collapse.in {
 }
 
 /* line 128, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-static-top {
+.navbar-static-top, body .wrapper .header .main-nav {
   z-index: 1000;
   border-width: 0 0 1px;
 }
 @media (min-width: 768px) {
   /* line 128, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-static-top {
+  .navbar-static-top, body .wrapper .header .main-nav {
     border-radius: 0;
   }
 }
@@ -5648,7 +5648,7 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   /* line 180, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar > .container .navbar-brand, .navbar > .wrapper .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  .navbar > .container .navbar-brand, body .wrapper .header .main-nav > .container .navbar-brand, .navbar > .wrapper .navbar-brand, body .wrapper .header .main-nav > .wrapper .navbar-brand, .navbar > .container-fluid .navbar-brand, body .wrapper .header .main-nav > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -12205,14 +12205,14 @@ body {
   background-color: rgba(90, 0, 0, 0.9);
   background-image: url("../img/checker-orange.png");
 }
-/* line 7, sass/_body.scss */
+/* line 8, sass/_body.scss */
 body .wrapper {
   background: #eeeeee;
   /* The Fallback */
   background: rgba(238, 238, 238, 0.9);
 }
 @media (min-width: 768px) {
-  /* line 7, sass/_body.scss */
+  /* line 8, sass/_body.scss */
   body .wrapper {
     border-right: 1px solid #a1a1a1;
     border-left: 1px solid #a1a1a1;
@@ -12220,7 +12220,7 @@ body .wrapper {
     border-left: 1px solid rgba(0, 0, 0, 0.25);
   }
 }
-/* line 15, sass/_body.scss */
+/* line 16, sass/_body.scss */
 body .wrapper .header {
   background: #5a0000;
   /* The Fallback */
@@ -12228,64 +12228,76 @@ body .wrapper .header {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-/* line 20, sass/_body.scss */
+/* line 21, sass/_body.scss */
 body .wrapper .header .logo {
   text-align: center;
 }
-/* line 26, sass/_body.scss */
+/* line 27, sass/_body.scss */
 body .wrapper .header .logo a {
   color: white;
   /* The Fallback */
   color: rgba(255, 255, 255, 0.9);
 }
 @media (min-width: 320px) {
-  /* line 26, sass/_body.scss */
+  /* line 27, sass/_body.scss */
   body .wrapper .header .logo a {
     font-size: 2em;
     text-transform: uppercase;
     line-height: 1.5em;
   }
 }
-/* line 33, sass/_body.scss */
+/* line 34, sass/_body.scss */
 body .wrapper .header .logo a:hover {
   text-decoration: none;
 }
-/* line 36, sass/_body.scss */
+/* line 37, sass/_body.scss */
 body .wrapper .header .logo a .with,
 body .wrapper .header .logo a .kyle {
   font-size: 4rem;
 }
-/* line 41, sass/_body.scss */
+/* line 42, sass/_body.scss */
 body .wrapper .header .logo a .cooking {
   display: block;
   font-size: 6rem;
 }
-/* line 45, sass/_body.scss */
+/* line 46, sass/_body.scss */
 body .wrapper .header .logo a .with {
   display: inline-block;
 }
-/* line 48, sass/_body.scss */
+/* line 49, sass/_body.scss */
 body .wrapper .header .logo a .kyle {
   display: inline-block;
 }
-/* line 58, sass/_body.scss */
-body .wrapper .header .nav {
-  margin-top: 1.7em;
+/* line 59, sass/_body.scss */
+body .wrapper .header .main-nav {
+  margin-top: 52px;
+  margin-bottom: 0;
 }
-/* line 66, sass/_body.scss */
-body .wrapper .header .nav ul {
+/* line 70, sass/_body.scss */
+body .wrapper .header .main-nav.nav .open > a, body .wrapper .header .main-nav.nav .open > a:hover, body .wrapper .header .main-nav.nav .open > a:focus {
+  background-color: transparent;
+}
+/* line 73, sass/_body.scss */
+body .wrapper .header .main-nav .dropdown-menu {
+  background: #5a0000;
+  /* The Fallback */
+  background: rgba(90, 0, 0, 0.9);
+}
+/* line 79, sass/_body.scss */
+body .wrapper .header .main-nav ul {
   padding-left: 0;
+  float: right;
 }
-/* line 68, sass/_body.scss */
-body .wrapper .header .nav ul li {
+/* line 82, sass/_body.scss */
+body .wrapper .header .main-nav ul li {
   display: inline-block;
 }
-/* line 71, sass/_body.scss */
-body .wrapper .header .nav ul li#menu-item-17 {
+/* line 85, sass/_body.scss */
+body .wrapper .header .main-nav ul li#menu-item-17 {
   display: none;
 }
-/* line 75, sass/_body.scss */
-body .wrapper .header .nav ul li a {
+/* line 89, sass/_body.scss */
+body .wrapper .header .main-nav ul li a {
   color: white;
   /* The Fallback */
   color: rgba(255, 255, 255, 0.9);
@@ -12293,21 +12305,21 @@ body .wrapper .header .nav ul li a {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 80, sass/_body.scss */
-body .wrapper .header .nav ul li a:hover {
+/* line 94, sass/_body.scss */
+body .wrapper .header .main-nav ul li a:hover {
   background-color: transparent;
   color: #dddddd;
   /* The Fallback */
   color: rgba(221, 221, 221, 0.9);
 }
-/* line 115, sass/_body.scss */
+/* line 129, sass/_body.scss */
 body .wrapper .main .sidebar {
   background: #2d5a00;
   /* The Fallback */
   background: rgba(45, 90, 0, 0.25);
   padding-bottom: 1em;
 }
-/* line 133, sass/_body.scss */
+/* line 147, sass/_body.scss */
 body .wrapper .footer {
   background: #cccccc;
   /* The Fallback */
