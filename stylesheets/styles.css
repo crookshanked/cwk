@@ -2406,7 +2406,7 @@ pre code {
 }
 
 /* line 11, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, body .wrapper .main .sidebar, .col-md-3, body .wrapper .main .sidebar, .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-xs-4, .col-sm-4, .col-md-4, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, body .wrapper .header .main-nav, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, body .wrapper .header .main-nav, .col-xs-9, .col-sm-9, body .wrapper .main .main-section, .col-md-9, body .wrapper .main .main-section, .col-lg-9, body .wrapper .main .main-section, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body .wrapper .header .logo, body .wrapper .header .main-nav, body .wrapper .main .main-section, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-sm-12, body .wrapper .header .main-nav, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, body .wrapper .main .sidebar, .col-md-3, body .wrapper .main .sidebar, .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, .col-xs-4, .col-sm-4, .col-md-4, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-lg-4, body .wrapper .footer .copyright, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, body .wrapper .header .logo, body .wrapper .footer .copyright, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, body .wrapper .header .main-nav, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, body .wrapper .header .main-nav, .col-xs-9, .col-sm-9, body .wrapper .main .main-section, .col-md-9, body .wrapper .main .main-section, .col-lg-9, body .wrapper .main .main-section, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, body .wrapper .header .logo, body .wrapper .header .main-nav, body .wrapper .main .main-section, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-sm-12, body .wrapper .header .main-nav, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -3197,7 +3197,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   /* line 27, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-1, .col-lg-2, .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, body .wrapper .footer .copyright, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, body .wrapper .header .main-nav, .col-lg-9, body .wrapper .main .main-section, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, .col-lg-4, body .wrapper .footer .copyright, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, body .wrapper .header .main-nav, .col-lg-9, body .wrapper .main .main-section, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
 
@@ -3212,12 +3212,12 @@ pre code {
   }
 
   /* line 35, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar, body .wrapper .footer .copyright {
+  .col-lg-3, body .wrapper .header .logo, body .wrapper .main .sidebar {
     width: 25%;
   }
 
   /* line 35, ../../../../../../../../../home/Meeker/.rvm/gems/ruby-1.9.3-p448/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-lg-4 {
+  .col-lg-4, body .wrapper .footer .copyright {
     width: 33.33333333%;
   }
 
@@ -12274,29 +12274,33 @@ body .wrapper .header .main-nav {
   margin-bottom: 0;
 }
 /* line 70, sass/_body.scss */
+body .wrapper .header .main-nav .menu-item-has-children:hover > ul {
+  display: block;
+}
+/* line 73, sass/_body.scss */
 body .wrapper .header .main-nav.nav .open > a, body .wrapper .header .main-nav.nav .open > a:hover, body .wrapper .header .main-nav.nav .open > a:focus {
   background-color: transparent;
 }
-/* line 73, sass/_body.scss */
+/* line 76, sass/_body.scss */
 body .wrapper .header .main-nav .dropdown-menu {
   background: #5a0000;
   /* The Fallback */
   background: rgba(90, 0, 0, 0.9);
 }
-/* line 79, sass/_body.scss */
+/* line 82, sass/_body.scss */
 body .wrapper .header .main-nav ul {
   padding-left: 0;
   float: right;
 }
-/* line 82, sass/_body.scss */
+/* line 85, sass/_body.scss */
 body .wrapper .header .main-nav ul li {
   display: inline-block;
 }
-/* line 85, sass/_body.scss */
+/* line 88, sass/_body.scss */
 body .wrapper .header .main-nav ul li#menu-item-17 {
   display: none;
 }
-/* line 89, sass/_body.scss */
+/* line 92, sass/_body.scss */
 body .wrapper .header .main-nav ul li a {
   color: white;
   /* The Fallback */
@@ -12305,25 +12309,27 @@ body .wrapper .header .main-nav ul li a {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 94, sass/_body.scss */
+/* line 97, sass/_body.scss */
 body .wrapper .header .main-nav ul li a:hover {
   background-color: transparent;
   color: #dddddd;
   /* The Fallback */
   color: rgba(221, 221, 221, 0.9);
 }
-/* line 129, sass/_body.scss */
+/* line 132, sass/_body.scss */
 body .wrapper .main .sidebar {
   background: #2d5a00;
   /* The Fallback */
   background: rgba(45, 90, 0, 0.25);
   padding-bottom: 1em;
 }
-/* line 147, sass/_body.scss */
+/* line 150, sass/_body.scss */
 body .wrapper .footer {
   background: #cccccc;
   /* The Fallback */
   background: rgba(204, 204, 204, 0.9);
-  padding-top: 1em;
-  padding-bottom: 1em;
+  height: 10em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 1.94223361em;
 }

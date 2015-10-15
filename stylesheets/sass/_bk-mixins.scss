@@ -11,6 +11,10 @@ $max-tablet:max-width 767px;
 $tablet2desk:(min-width 768px)(max-width 1220px);
 $font1: 'Fjalla One', sans-serif;
 $font2: 'Raleway', sans-serif;
+$bp-2hd: min-resolution 2dppx;
+$gnum:1.61803398874989484820;
+$golden:1.618;
+$pie:3.1426em;
 
 // Functions
 @function slash() {

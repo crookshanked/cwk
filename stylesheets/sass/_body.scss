@@ -67,6 +67,9 @@ body {
 					@extend .navbar-static-top;
 					margin-top: 52px;
 					margin-bottom: 0;
+					.menu-item-has-children:hover > ul {
+						display:block;
+					}
 					&.nav .open > a, &.nav .open > a:hover, &.nav .open > a:focus {
 						background-color:transparent;
 					}
@@ -147,17 +150,23 @@ body {
 		.footer {
 			@extend .row;
 			@include background-opacity(#ccc, .9);
-			padding-top:1em;
-			padding-bottom:1em;
+			height:10em;
+			// padding-right:$pie/$gnum;				
+			// padding-left:$pie/$gnum;
+			padding-right:1em;
+			padding-left:1em;
+			padding-top:$pie/$gnum;	
 				.copyright {
 					@extend .col-xs-12;
 					@extend .col-sm-6;
 					@extend .col-md-4;
-					@extend .col-lg-3;
+					@extend .col-lg-4;
+		
 				}
 		}
 		//end footer
 	}
 	//end wrapper
-//end body
 }
+//end body
+
